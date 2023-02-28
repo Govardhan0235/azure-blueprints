@@ -26,18 +26,18 @@ steps:
 
 - task: CreateBlueprint@1
   inputs:
-    azureSubscription: $(spnName)
-    BlueprintName: $(blueprintName)
-    BlueprintPath: '$(blueprintsPath)$(blueprintName)' # would need to edit this to work with built-ins
+    azureSubscription: 'Govardhan – MPN (54ff4cf6-32b8-4112-ac42-05a514813214)'
+    BlueprintName: '$(blueprintName)'
+    BlueprintPath: '$(blueprintsPath)$(blueprintName)'
     AlternateLocation: false
     PublishBlueprint: true
 
 - task: AssignBlueprint@1
   inputs:
-    azureSubscription: $(spnName)
+    azureSubscription: 'Govardhan – MPN (54ff4cf6-32b8-4112-ac42-05a514813214)'
     AssignmentName: 'pla-$(blueprintName)'
-    BlueprintName: $(blueprintName)
+    BlueprintName: '$(blueprintName)'
     ParametersFile: '$(blueprintsPath)$(blueprintName)\assign.json'
-    SubscriptionID: $(subscriptionId)
+    AlternateSubscription: false
     Wait: true
     Timeout: 500
