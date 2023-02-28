@@ -1,4 +1,5 @@
-pool: 'Hosted VS2017'
+pool: 
+   vmImage: ubuntu-latest
 
 variables:
  - name: spnName
