@@ -27,7 +27,7 @@ steps:
 
 - task: CreateBlueprint@1
   inputs:
-    azureSubscription: '54ff4cf6-32b8-4112-ac42-05a514813214'
+    azureSubscription: 'Govardhan – MPN (54ff4cf6-32b8-4112-ac42-05a514813214)'
     BlueprintName: '$(blueprintName)'
     BlueprintPath: '$(blueprintsPath)$(blueprintName)'
     AlternateLocation: false
