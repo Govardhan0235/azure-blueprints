@@ -39,4 +39,5 @@ steps:
     AssignmentName: 'pla-$(blueprintName)'
     BlueprintName: '$(blueprintName)'
     ParametersFile: '$(blueprintsPath)$(blueprintName)\assign.json'
-    AlternateSubscription: false
+    AlternateSubscription: true
+    SubscriptionID: '$(subscriptionId)'
