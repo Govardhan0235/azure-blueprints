@@ -9,7 +9,7 @@ variables:
  - name: blueprintName
    value: '101-boilerplate'
  - name: subscriptionId
-   value: 'e93d3ee6-fac1-412f-92d6-bfb379e81af2' # / Contoso IT - SH360 - Prod
+   value: '54ff4cf6-32b8-4112-ac42-05a514813214' # / Contoso IT - SH360 - Prod
 
 trigger:
   branches:
@@ -27,7 +27,7 @@ steps:
 
 - task: CreateBlueprint@1
   inputs:
-    azureSubscription: 'Govardhan – MPN (54ff4cf6-32b8-4112-ac42-05a514813214)'
+    azureSubscription: '54ff4cf6-32b8-4112-ac42-05a514813214'
     BlueprintName: '$(blueprintName)'
     BlueprintPath: '$(blueprintsPath)$(blueprintName)'
     AlternateLocation: false
