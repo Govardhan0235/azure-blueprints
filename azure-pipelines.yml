@@ -27,7 +27,7 @@ steps:
 
 - task: CreateBlueprint@1
   inputs:
-    azureSubscription: 'Govardhan – MPN (54ff4cf6-32b8-4112-ac42-05a514813214)'
+    azureSubscription: 'Blueprint'
     BlueprintName: '$(blueprintName)'
     BlueprintPath: '$(blueprintsPath)$(blueprintName)'
     AlternateLocation: false
@@ -35,11 +35,11 @@ steps:
 
 - task: AssignBlueprint@1
   inputs:
-    azureSubscription: 'Govardhan – MPN (54ff4cf6-32b8-4112-ac42-05a514813214)'
+    azureSubscription: 'Blueprint'
     AssignmentName: 'pla-$(blueprintName)'
     BlueprintName: '$(blueprintName)'
     ParametersFile: '$(blueprintsPath)$(blueprintName)\assign.json'
     AlternateSubscription: true
-    SubscriptionID: $(subscriptionId)
+    SubscriptionID: '$(subscriptionId)'
     Wait: true
     Timeout: 500
