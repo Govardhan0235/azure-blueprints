@@ -4,7 +4,7 @@
   },
   "location": "westus2",
   "properties": {
-    "blueprintId": "",
+    "blueprintId": "/subscriptions/54ff4cf6-32b8-4112-ac42-05a514813214/providers/Microsoft.Blueprint/blueprints/101-boilerplate/versions/1",
     "resourceGroups": {
       "SingleRG": {
         "name": "test-001",
