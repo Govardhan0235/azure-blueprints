@@ -40,4 +40,6 @@ steps:
     BlueprintName: '$(blueprintName)'
     ParametersFile: '$(blueprintsPath)$(blueprintName)\assign.json'
     AlternateSubscription: true
-    SubscriptionID: '$(subscriptionId)'
+    SubscriptionID: $(subscriptionId)
+    Wait: true
+    Timeout: 500
